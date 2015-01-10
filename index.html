@@ -1,149 +1,619 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Responsive Bootstrap 3 Startup and Multipurpose Template">
+    <meta name="keywords" content="Gym, Fitness, Fitness Club, Pool, Yoga, Pilates, Pay as you go, Spinning">
+    <meta name="author" content="Rob Prouse">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <!-- SITE TITLE -->
+    <title>Pass To Fitness | Commitment Free Gym Passes</title>
 
-    <title>Passport to Fitness</title>
+    <!-- =========================
+     FAV AND TOUCH ICONS AND FONT  
+    ============================== -->
+    <link rel="icon" href="images/favicons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicons/favicon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="images/favicons/favicon-57.png">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Cabin:400,600|Open+Sans:300,600,400' rel='stylesheet'>
 
-    <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- =========================
+     STYLESHEETS   
+    ============================== -->
+    <!-- BOOTSTRAP AND ANIMATION -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- FONT ICONS -->
+    <link rel="stylesheet" href="assets/icons/icons.css">
+
+    <!-- CAROUSEL AND LIGHTBOX -->
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/nivo_themes/default/default.css">
+
+    <!-- CUSTOM STYLESHEETS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- RESPONSIVE FIXES -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- COLORS -->
+    <link rel="stylesheet" href="css/colors/blue.css">
+    <!-- <link rel="stylesheet" href="css/colors/red.css"> -->
+    <!-- <link rel="stylesheet" href="css/colors/green.css"> -->
+    <!-- <link rel="stylesheet" href="css/colors/green2.css"> -->
+    <!-- <link rel="stylesheet" href="css/colors/purple.css"> -->
+    <!-- <link rel="stylesheet" href="css/colors/orange.css"> -->
+
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+			<script src="js/html5shiv.min.js"></script>
     <![endif]-->
-
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .standard-button,
+        .navbar-register-button {
+       filter: none;
+        }
+      </style>
+    <![endif]-->
+    <!-- ****************
+      After neccessary customization/modification, Please minify HTML/CSS according to http://browserdiet.com/en/ for better performance
+     **************** -->
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">PassportToFitness.com</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <!-- =========================
+     PRE LOADER
+    ============================== -->
+    <div class="preloader">
+        <div class="status">
+            &nbsp;
         </div>
-        <!-- /.container -->
-    </nav>
+    </div>
 
-    <!-- Image Background Page Header -->
-    <!-- Note: The background image is set within the business-casual.css file. -->
-    <header class="main-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="tagline">No commitment Fitness Day Passes</h1>
+    <!-- =========================
+     SECTION: HOME / HEADER
+    ============================== -->
+    <header class="header" data-stellar-background-ratio="0.5" id="home">
+
+        <!-- COLOR OVER IMAGE -->
+        <div class="overlay-layer">
+
+            <!-- STICKY NAVIGATION -->
+            <div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+
+                        <!-- LOGO ON STICKY NAV BAR -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#stamp-navigation">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-grid-2x2"></span>
+                        </button>
+
+                        <!-- LOGO -->
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logo-nav.png" alt="">
+                        </a>
+
+                    </div>
+
+                    <!-- TOP BAR -->
+                    <div class="navbar-collapse collapse" id="stamp-navigation">
+
+                        <!-- NAVIGATION LINK -->
+                        <ul class="nav navbar-nav navbar-left main-navigation small-text">
+                            <li>
+                                <a href="#about">Why Us?</a>
+                            </li>
+                            <li>
+                                <a href="#pricing">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#testimonials">Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="#contactus">Gym Managers</a>
+                            </li>
+                            <!-- <li><a href="http://example.com" class="external">External Link Example</a></li> -->
+                        </ul>
+
+                        <!-- LOGIN REGISTER -->
+                        <ul class="nav navbar-nav navbar-right login-register small-text">
+                            <li class="login js-login">
+                                <a href="#">Login</a>
+                            </li>
+                            <li class="register-button js-register inpage-scroll">
+                                <a href="#getstarted" class="navbar-register-button">Get Started</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /END CONTAINER -->
+            </div>
+            <!-- /END STICKY NAVIGATION -->
+            <!-- CONTAINER -->
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <!-- HEADING AND BUTTONS -->
+                        <div class="intro-section">
+
+                            <!-- WELCOM MESSAGE -->
+                            <h1 class="intro white-text">Commitment Free Fitness Day Passes</h1>
+                            <h5 class="white-text">Go to a gym, pool or fitness club near you without the hassle of commitments or memberships</h5>
+
+                            <!-- BUTTON -->
+                            <div class="button">
+                                <a href="#getstarted" class="btn btn-primary standard-button inpage-scroll">Get Started</a>
+                            </div>
+
+                        </div>
+                        <!-- /END HEADNING AND BUTTONS -->
+
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Page Content -->
-    <div class="container">
+    <!-- =========================
+     SECTION: CLIENTS LOGOs
+    ============================== -->
+    <div class="clients white-bg">
+            <ul class="client-logos">
+                <li>
+                    <img src="images/companies/1.png" alt="">
+                </li>
+                <li>
+                    <img src="images/companies/2.png" alt="">
+                </li>
+                <li>
+                    <img src="images/companies/3.png" alt="">
+                </li>
+                <li>
+                    <img src="images/companies/4.png" alt="">
+                </li>
+                <li>
+                    <img src="images/companies/5.png" alt="">
+                </li>
+                <li>
+                    <img src="images/companies/6.png" alt="">
+                </li>
+            </ul>
+    </div>
 
-        <hr>
-
-        <div class="row">
-            <div class="col-sm-8">
-                <h2>What We Do</h2>
-                <p>Introduce the visitor to the business using clear, informative text. Use well-targeted keywords within your sentences to make sure search engines can find the business.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique eligendi reiciendis sunt distinctio odit? Quia, neque, ipsa, adipisci quisquam ullam deserunt accusantium illo iste exercitationem nemo voluptates asperiores.</p>
-                <p>
-                    <a class="btn btn-default btn-lg" href="#">Call to Action &raquo;</a>
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <h2>Contact Us</h2>
-                <address>
-                    <strong>Start Bootstrap</strong>
-                    <br>3481 Melrose Place
-                    <br>Beverly Hills, CA 90210
-                    <br>
-                </address>
-                <address>
-                    <abbr title="Phone">P:</abbr>(123) 456-7890
-                    <br>
-                    <abbr title="Email">E:</abbr> <a href="mailto:#">name@example.com</a>
-                </address>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <div class="row">
-            <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center" src="/images/spinning.jpg" alt="">
-                <h2>Fitness Clubs</h2>
-                <p>These marketing boxes are a great place to put some information. These can contain summaries of what the company does, promotional information, or anything else that is relevant to the company. These will usually be below-the-fold.</p>
-            </div>
-            <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center" src="/images/yoga.jpg" alt="">
-                <h2>Yoga & Pilates Classes</h2>
-                <p>The images are set to be circular and responsive. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-            </div>
-            <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center" src="/images/swimming.jpg" alt="">
-                <h2>Swimming Pools</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
+    <!-- =========================
+     SECTION: BRIEF LEFT
+    ============================== -->
+    <section class="brief white-bg text-left" id="about">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; PassportToFitness.com 2014</p>
+
+                <!-- BRIEF IMAGE -->
+                <div class="col-md-6 pull-right wow fadeInLeft" data-wow-offset="20" data-wow-duration="1.75s">
+                    <div class="brief-image-right">
+                        <img src="images/about-us.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- BRIEF HEADING -->
+                <div class="col-md-6 content-section pull-left wow fadeInRight" data-wow-offset="20" data-wow-duration="1.75s">
+                    <h2 class="text-left dark-text"><strong>Why</strong> PassToFitness.com? </h2>
+                    <div class="colored-line-left">
+                    </div>
+                    <p class="text-left">
+                        PassToFitness.com allows you to purchase day passes or monthly passes to gyms or fitness clubs
+                        near you without fear of commitment. There are no joining or hidden fees and you don't need an
+                        introduction to the gym if you don't want one.
+                    </p>
+
+                    <!-- FEATURE LIST -->
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <ul class="feature-list text-left">
+                                <li><span class="icon-man-people-streamline-user colored-text"></span> No commitment</li>
+                                <li><span class="icon-arrows-rotate colored-text"></span> No membership fees</li>
+                                <li><span class="icon-arrows-circle-right colored-text"></span> Refunds available</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <ul class="feature-list text-left">
+                                <li><span class="icon-ecommerce-dollar colored-text"></span> Save money</li>
+                                <li><span class="icon-basic-calendar colored-text"></span> Flexible schedule</li>
+                                <li><span class="icon-basic-heart colored-text"></span> Try new gyms</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+     SECTION: SOME STATS
+    ============================== -->
+    <section class="stats" id="section4" data-stellar-background-ratio="0.5">
+        <div class="overlay-layer-2">
+            <div class="container">
+                <div class="row no-gutters">
+
+                    <!-- SINGLE COLUMN WITH ICON -->
+                    <div class="col-md-4 col-sm-4 col-xs-4 single-stats wow fadeInLeft" data-wow-offset="10" data-wow-duration="1.75s">
+                        <div class="icon-container">
+                            <span class="colored-text icon-basic-calendar"></span>
+                        </div>
+                        <h4 class="white-text">Workout On Your Schedule</h4>
+                    </div>
+
+                    <!-- SINGLE COLUMN WITH ICON -->
+                    <div class="col-md-4 col-sm-4 col-xs-4 single-stats border-left-colored border-right-colored wow fadeIn" data-wow-offset="10" data-wow-duration="1.75s">
+                        <div class="icon-container">
+                            <span class="colored-text icon-basic-geolocalize-01"></span>
+                        </div>
+                        <h4 class="white-text">Find Gyms Near You</h4>
+                    </div>
+
+                    <!-- SINGLE COLUMN WITH ICON -->
+                    <div class="col-md-4 col-sm-4 col-xs-4 single-stats wow fadeInRight" data-wow-offset="10" data-wow-duration="1.75s">
+                        <div class="icon-container">
+                            <span class="colored-text icon-ecommerce-dollar"></span>
+                        </div>
+                        <h4 class="white-text">Save Money</h4>
+                    </div>
+                </div>
+
+                <!-- CALL TO ACTION -->
+                <div class="stats-footer">
+                    <div class="long-transparent-line">
+                    </div>
+                    <p class="white-text">
+                        <a href="#getstarted" class="strong inpage-scroll">Get Started Now »</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+     SECTION: PRICING
+    ============================== -->
+    <section class="pricing grey-bg" id="pricing">
+        <div class="container">
+
+            <!-- SECTION HEADER -->
+            <div class="section-header">
+                <h2 class="dark-text"><strong>Save</strong> Money</h2>
+                <div class="colored-line">
+                </div>
+                <div class="sub-heading">
+                    Gyms, pools and fitness classes on your terms and your schedule.
                 </div>
             </div>
-            <!-- /.row -->
-        </footer>
 
+            <!-- PRICING TABLE -->
+            <div class="row pricing-table">
+
+                <!-- SINGLE PACKAGE -->
+                <div class="col-md-4 wow fadeInLeft" data-wow-offset="20" data-wow-duration="1.75s">
+                    <div class="single-pricing border-bottom-hover">
+
+                        <div class="package-title">
+                            <h3 class="colored-text">Day Pass</h3>
+                            <div class="colored-line">
+                            </div>
+                        </div>
+                        <h2 class="price"><span class="colored-text icon-ecommerce-sale"></span></h2>
+                        
+                        <ul class="package-list">
+                            <li><span class="dark-text strong">1</span>trip to the gym</li>
+                            <li>Great for trying a new gym</li>
+                            <li>At least a <span class="dark-text strong">10%</span>discount</li>
+                            <li><span class="dark-text strong">Refund</span>any time while valid</li>
+                            <li>Valid for <span class="dark-text strong">30</span>days</li>
+                        </ul>
+
+                        <div class="button">
+                            <a href="#getstarted" class="btn standard-button inpage-scroll">Get Started</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- SINGLE PACKAGE -->
+                <div class="col-md-4 wow flipInY" data-wow-offset="10" data-wow-duration="1.5s">
+                    <div class="single-pricing border-bottom-hover">
+
+                        <div class="package-title color-bg">
+                            <h3 class="white-text">Passbook</h3>
+                        </div>
+                        <h2 class="price"><span class="colored-text icon-ecommerce-sales"></span></h2>
+
+                        <ul class="package-list">
+                            <li><span class="colored-text strong">5</span>trips to the gym</li>
+                            <li><span class="colored-text strong">Best value</span> if you work out once a week</li>
+                            <li><span class="colored-text strong">Extra savings</span> over a day pass</li>
+                            <li><span class="colored-text strong">Refund</span>if unused within 7 days</li>
+                            <li>Valid for <span class="dark-text strong">30</span>days</li>
+                        </ul>
+
+                        <div class="button">
+                            <a href="#getstarted" class="btn standard-button inpage-scroll">Get Started</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- SINGLE PACKAGE -->
+                <div class="col-md-4 wow fadeInRight" data-wow-offset="20" data-wow-duration="1.75s">
+                    <div class="single-pricing border-bottom-hover">
+
+                        <div class="package-title">
+                            <h3 class="colored-text">Month Pass</h3>
+                            <div class="colored-line">
+                            </div>
+                        </div>
+                        <h2 class="price"><span class="colored-text icon-basic-calendar"></span></h2>
+
+                        <ul class="package-list">
+                            <li><span class="dark-text strong">Unlimited</span>trips to the gym</li>
+                            <li>Choose your start date</li>
+                            <li>The biggest <span class="dark-text strong">savings</span></li>
+                            <li><span class="dark-text strong">Refund</span>if unused within 7 days</li>
+                            <li>Valid for <span class="dark-text strong">30</span>days</li>
+                        </ul>
+
+                        <div class="button">
+                            <a href="#getstarted" class="btn standard-button inpage-scroll">Get Started</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+     SECTION: TESTIMONIALS
+    ============================== -->
+    <section class="testimonials white-bg" id="testimonials">
+        <div class="container">
+
+            <!-- SECTION HEADER -->
+            <div class="section-header">
+                <h2 class="dark-text"><strong>Happy</strong> Customers</h2>
+                <div class="colored-line">
+                </div>
+                <div class="sub-heading">
+                    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+
+                <!-- SINGLE FEEDBACK -->
+                <div class="col-md-4 wow fadeInLeft" data-wow-offset="10" data-wow-duration="1.75s">
+                    <div class="feedback">
+                        <div class="pic-container">
+                            <img src="images/clients/1.jpg" alt="">
+                        </div>
+                        <p>
+                            &ldquo;Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.&rdquo;
+                        </p>
+                        <h5 class="colored-text">John Smith</h5>
+                    </div>
+                </div>
+
+                <!-- SINGLE FEEDBACK -->
+                <div class="col-md-4 wow fadeIn" data-wow-offset="10" data-wow-duration="1.75s">
+                    <div class="feedback border-left border-right">
+                        <div class="pic-container">
+                            <img src="images/clients/2.jpg" alt="">
+                        </div>
+                        <p>
+                            &ldquo;Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.&rdquo;
+                        </p>
+                        <h5 class="colored-text">Julia Rogers</h5>
+                    </div>
+                </div>
+
+                <!-- SINGLE FEEDBACK -->
+                <div class="col-md-4 wow fadeInRight" data-wow-offset="10" data-wow-duration="1.75s">
+                    <div id="feedback">
+                        <div class="feedback">
+                            <div class="pic-container">
+                                <img src="images/clients/3.jpg" alt="">
+                            </div>
+                            <p>
+                                &ldquo;Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.&rdquo;
+                            </p>
+                            <h5 class="colored-text">Peter Jones</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================
+     SECTION: CALL TO ACTION
+    ============================== -->
+    <section class="call-to-action" id="getstarted" data-stellar-background-ratio="0.1">
+        <div class="overlay-layer-2">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-8 col-md-offset-2">
+
+                        <div class="uppercase colored-text strong">
+                            Coming Soon!
+                        </div>
+
+                        <h2 class="white-text strong wow fadeInLeft" data-wow-duration="2s" data-wow-offset="40">Give us your email and we will let you know when we go live. We won't spam you ever, we promise!</h2>
+
+                        <!-- MAILCHIMP SUBSCRIBE FORM -->
+                        <div class="row">
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <div class="horizontal-subscribe-form">
+
+                                    <form class="form-inline mailchimp">
+
+                                        <input type="email" id="cf-email" name="email" class="form-control input-box" placeholder="Enter your Email">
+
+                                        <button type="submit" class="btn btn-primary standard-button">Subscribe</button>
+
+                                    </form>
+
+                                    <!-- MAILCHIMP SUCCESS AND ERROR MESSAGE -->
+                                    <p class="mailchimp-success white-text"><span class="icon-check-alt2 colored-text"></span>Thanks! Please confirm your subscription from your email inbox</p>
+                                    <p class="mailchimp-error white-text"><span class="icon-close-alt2"></span>Error! Please enter correct email</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =========================
+     SECTION: GYM OWNERS
+    ============================== -->
+    <section class="contactus white-bg" id="contactus">
+        <div class="container">
+            <div class="row">
+
+                <!-- BRIEF IMAGE -->
+                <div class="col-md-4 pull-right wow fadeInLeft" data-wow-offset="20" data-wow-duration="1.75s">
+                    <div class="contactus-image-right">
+                        <img src="images/swimming.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- BRIEF HEADING -->
+                <div class="col-md-8 content-section pull-left wow fadeInRight" data-wow-offset="20" data-wow-duration="1.75s">
+                    <h2 class="text-left dark-text">Gym Managers</h2>
+                    <div class="colored-line-left">
+                    </div>
+                    <p class="text-left">
+                        If you manage or own a gym, fitness club, pool or yoga studio? We work with fitness facilities of all
+                        shapes and sizes across North America. Contact us and we will start driving business to you.
+                    </p>
+                    <br/><br/>
+                    <button class="btn btn-primary standard-button wow fadeInRight" data-wow-duration="2s" data-wow-offset="40" type="button" data-toggle="modal" data-target="#stamp-modal">Contact Us</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- REGISTRATION FORM FOR POPUP BOX -->
+    <div class="modal fade bs-example-modal-sm" id="stamp-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="vertical-registration-form">
+                    <h4 class="dark-text form-heading">Enquire about including your facility</h4>
+                    <form class="registration-form" id="contact-form">
+                        <input type="text" id="cf-name" name="name" class="form-control input-box" placeholder="Name">
+                        <input type="email" id="cf-email" name="email" class="form-control input-box" placeholder="Email">
+                        <input type="text" id="cf-subject" name="subject" class="form-control input-box" placeholder="Subject">
+                        <textarea name="message" id="cf-message" class="form-control textarea-box" rows="4" placeholder="Message"></textarea>
+                        <button class="btn btn-primary standard-button">Contact Us</button>
+                    </form>
+                    <p class="email-success dark-text">
+                        <span class="icon-check-alt2 colored-text"></span>Email sent successfully
+                    </p>
+                    <p class="email-error dark-text">
+                        <span class="icon-close-alt2"></span>Error! Please check that all fields are filled correctly
+                    </p>
+                    <!-- MAILCHIMP ALERTS
+                    <p class="mailchimp-success dark-text"><span class="icon-check-alt2 colored-text"></span>We sent the confirmation to your email</p>
+                    <p class="mailchimp-error dark-text"><span class="icon-close-alt2"></span>Error! Please check all fields filled correctly</p>
+                    -->
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!-- FOOTER -->
+    <footer class="footer grey-bg">
+        ©2014 PassportToFitness.com. All Rights Reserved
 
-    <!-- Bootstrap Core JavaScript -->
+        <!-- OPTIONAL FOOTER LINKS -->
+        <ul class="footer-links small-text">
+            <li>
+                <a href="" class="dark-text">About</a>
+            </li>
+            <li>
+                <a href="" class="dark-text">Terms</a>
+            </li>
+            <li>
+                <a href="" class="dark-text">Privacy</a>
+            </li>
+        </ul>
+
+        <!-- SOCIAL ICONS -->
+        <ul class="social-icons">
+            <li>
+                <a href=""><span class="icon-social-facebook transparent-text-dark"></span></a>
+            </li>
+            <li>
+                <a href=""><span class="icon-social-twitter transparent-text-dark"></span></a>
+            </li>
+            <li>
+                <a href=""><span class="icon-social-pinterest transparent-text-dark"></span></a>
+            </li>
+            <li>
+                <a href=""><span class="icon-social-googleplus transparent-text-dark"></span></a>
+            </li>
+            <li>
+                <a href=""><span class="icon-social-dribbble transparent-text-dark"></span></a>
+            </li>
+        </ul>
+
+    </footer>
+
+    <!-- =========================
+     SCRIPTS
+    ============================== -->
+    <script src="js/jquery.min.js"></script>
+    <script>
+        /* PRE LOADER */
+        jQuery(window).load(function () {
+            "use strict";
+            jQuery(".status").fadeOut();
+            jQuery(".preloader").delay(1000).fadeOut("slow");
+        })
+    </script>
+    <script src="js/smoothscroll.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/retina.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- GOGLE MAP -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <!-- CUSTOM JS  -->
+    <script src="js/custom.js"></script>
 
 </body>
 
