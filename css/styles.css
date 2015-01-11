@@ -508,6 +508,10 @@ strong,
     margin-bottom: 60px;
 }
 
+h1.intro {
+    text-transform: capitalize;    
+}
+
 
 /*---------------------------------------
    3.2 SECTION: CLIENTS LIST    
