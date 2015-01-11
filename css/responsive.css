@@ -394,3 +394,19 @@
         min-height: 55px;
     }
 }
+
+@media (max-width: 400px) {
+    #full-logo {
+        width: 280px;
+    }
+}
+
+@media (max-width: 340px) {
+    #full-logo {
+        width: 220px;
+    }
+
+    h1.intro {
+        font-size: 32px;
+    }
+}
