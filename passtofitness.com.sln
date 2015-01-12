@@ -3,25 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "passporttofitness.com", "http://localhost:56977", "{D5AA414F-82DA-4178-B7C2-D0F4C9157822}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "passtofitness.com", "http://localhost:56977", "{D5AA414F-82DA-4178-B7C2-D0F4C9157822}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_56977"
-		Debug.AspNetCompiler.PhysicalPath = "..\passporttofitness.com\"
+		Debug.AspNetCompiler.PhysicalPath = "..\PassToFitness\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56977\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_56977"
-		Release.AspNetCompiler.PhysicalPath = "..\passporttofitness.com\"
+		Release.AspNetCompiler.PhysicalPath = "..\PassToFitness\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56977\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "..\passporttofitness.com\"
+		SlnRelativePath = "..\PassToFitness\"
 	EndProjectSection
 EndProject
 Global
